@@ -1,11 +1,11 @@
-(ql:quickload :woo-test)
+(ql:quickload :woo-crash)
 
-(defpackage woo-test.app
+(defpackage woo-crash.app
   (:use :cl)
   (:import-from :lack.builder
                 :builder)
-  (:import-from :woo-test
+  (:import-from :woo-crash
                 :*web*))
-(in-package :woo-test.app)
+(in-package :woo-crash.app)
 
 (builder nil :accesslog nil :session nil *web*)

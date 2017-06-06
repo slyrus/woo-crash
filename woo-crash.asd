@@ -1,5 +1,5 @@
 
-(asdf:defsystem woo-test
+(asdf:defsystem woo-crash
   :version "0.1"
   :author "Cyrus Harmon"
   :license ""
@@ -10,5 +10,5 @@
   :serial t
   :components ((:module "src"
                 :components
-                ((:file "woo-test"))))
+                ((:file "woo-crash"))))
   :description "")

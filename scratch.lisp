@@ -1,8 +1,8 @@
 
-(pushnew #p"~/projects/woo-test/" asdf:*central-registry* :test 'equalp)
-(asdf:load-system "woo-test")
+(pushnew #p"~/projects/woo-crash/" asdf:*central-registry* :test 'equalp)
+(asdf:load-system "woo-crash")
 
-(woo-test::start :server :woo :port 8080)
+(woo-crash::start :server :woo :port 8080)
 
 ;;;
 ;;; this causes things to go haywire:

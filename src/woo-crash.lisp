@@ -1,13 +1,13 @@
 
-(defpackage #:woo-test
+(defpackage #:woo-crash
   (:use :cl :caveman2)
   (:import-from :clack
                 :clackup)
   (:export #:start))
 
-(in-package #:woo-test)
+(in-package #:woo-crash)
 
-(defparameter *application-root*   (asdf:system-source-directory :woo-test))
+(defparameter *application-root*   (asdf:system-source-directory :woo-crash))
 
 (defclass <web> (<app>) ())
 (defvar *web* (make-instance '<web>))
@@ -17,7 +17,7 @@
   (format nil "Welcome, ~A" |name|))
 
 (defvar *appfile-path*
-  (asdf:system-relative-pathname :woo-test #P"app.lisp"))
+  (asdf:system-relative-pathname :woo-crash #P"app.lisp"))
 
 (defvar *handler* nil)
 
