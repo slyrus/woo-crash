@@ -6,9 +6,7 @@
   :depends-on (:clack
                :lack
                :caveman2
-               :cl-ppcre
-               :uiop
-               :cl-who)
+               :cl-ppcre)
   :serial t
   :components ((:module "src"
                 :components

@@ -8,9 +8,6 @@
 (in-package #:woo-test)
 
 (defparameter *application-root*   (asdf:system-source-directory :woo-test))
-(defparameter *static-directory*   (merge-pathnames #P"static/" *application-root*))
-
-(syntax:use-syntax :annot)
 
 (defclass <web> (<app>) ())
 (defvar *web* (make-instance '<web>))
